@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>reverse</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function reverseWords(sentence) {
+   
+    const words = sentence.split(' ');
+
+    
+    const reversedWords = words.map(word => {
+        
+        return word.split('').reverse().join('');
+    });
+
+    const reversedSentence = reversedWords.join(' ');
+
+    return reversedSentence;
+}
+
+const inputSentence = "This is a sunny day";
+const reversedSentence = reverseWords(inputSentence);
+document.write(reversedSentence);
+
+    </script>
+</body>
+</html>
+</body>
+</html>
